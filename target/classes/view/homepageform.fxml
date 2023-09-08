@@ -2,6 +2,8 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -11,9 +13,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="426.0" prefWidth="691.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.HomepageformController">
+<AnchorPane prefHeight="565.0" prefWidth="787.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.HomepageformController">
    <children>
-      <Pane layoutX="87.0" layoutY="125.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
+      <Pane layoutX="122.0" layoutY="94.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
          <children>
             <Button fx:id="addstudentbtn" mnemonicParsing="false" onAction="#addstudentbtnonAction" onMouseEntered="#addstudentonMouseenterd" onMouseExited="#addstudentMouseexited" prefHeight="154.0" prefWidth="162.0" style="-fx-background-color: white; -fx-background-radius: 15px; -fx-border-color: black; -fx-border-radius: 15px;">
                <graphic>
@@ -29,7 +31,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="267.0" layoutY="126.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
+      <Pane layoutX="302.0" layoutY="95.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
          <children>
             <Button fx:id="addroombtn" mnemonicParsing="false" onAction="#addroombtnonaction" onMouseEntered="#addroomonMouseenterd" onMouseExited="#addroomMouseexited" prefHeight="154.0" prefWidth="162.0" style="-fx-background-color: white; -fx-background-radius: 15px; -fx-border-color: black; -fx-border-radius: 15px;">
                <graphic>
@@ -45,7 +47,7 @@
             </Button>
          </children>
       </Pane>
-      <Pane layoutX="448.0" layoutY="126.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
+      <Pane layoutX="483.0" layoutY="95.0" prefHeight="153.0" prefWidth="161.0" style="-fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: black; -fx-background-color: whiite;">
          <children>
             <Button fx:id="managereservationbtn" mnemonicParsing="false" onAction="#managereservationbtnonAction" onMouseEntered="#managereservationonMouseenterd" onMouseExited="#managereservationMouseexited" prefHeight="154.0" prefWidth="162.0" style="-fx-background-color: white; -fx-background-radius: 15px; -fx-border-color: black; -fx-border-radius: 15px;">
                <graphic>
@@ -63,7 +65,7 @@
       </Pane>
       <Pane fx:id="studentpane" layoutX="117.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text fill="WHITE" layoutX="40.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student">
+            <Text layoutX="40.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
@@ -71,7 +73,7 @@
          </children></Pane>
       <Pane fx:id="reservationpane" layoutX="494.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text fill="WHITE" layoutX="8.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation">
+            <Text fill="#1b1b1b" layoutX="8.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
@@ -79,7 +81,7 @@
          </children></Pane>
       <Pane fx:id="roompane" layoutX="305.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text fill="WHITE" layoutX="43.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room">
+            <Text fill="#111111" layoutX="43.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room">
                <font>
                   <Font name="System Bold Italic" size="17.0" />
                </font>
@@ -94,7 +96,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Pane fx:id="optionpane" opacity="0.94" prefHeight="426.0" prefWidth="215.0" style="-fx-background-color: white; -fx-background-color: gray;" visible="false">
+      <Pane fx:id="optionpane" layoutX="35.0" layoutY="-31.0" opacity="0.94" prefHeight="426.0" prefWidth="215.0" style="-fx-background-color: white; -fx-background-color: gray;" visible="false">
          <children>
             <Button fx:id="backbtn" mnemonicParsing="false" onAction="#backbtnonAction" prefHeight="46.0" prefWidth="54.0" style="-fx-background-color: gray;">
                <graphic>
@@ -143,7 +145,7 @@
             </Button>
          </children>
       </Pane>
-      <Text layoutX="277.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" textAlignment="CENTER" wrappingWidth="151.297119140625">
+      <Text layoutX="312.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" textAlignment="CENTER" wrappingWidth="151.297119140625">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -156,7 +158,7 @@
             </LinearGradient>
          </fill>
       </Text>
-      <Text layoutX="480.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="128.297119140625">
+      <Text layoutX="515.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="128.297119140625">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -169,7 +171,7 @@
             </LinearGradient>
          </fill>
       </Text>
-      <Text layoutX="92.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textAlignment="CENTER" wrappingWidth="151.297119140625">
+      <Text layoutX="127.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textAlignment="CENTER" wrappingWidth="151.297119140625">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -182,5 +184,15 @@
             </LinearGradient>
          </fill>
       </Text>
+      <TableView layoutX="47.0" layoutY="325.0" prefHeight="216.0" prefWidth="684.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <columns>
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="114.39996337890625" style="-fx-background-radius: 20px; -fx-border-radius: 20px;" text="C2" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+         </columns>
+      </TableView>
    </children>
 </AnchorPane>

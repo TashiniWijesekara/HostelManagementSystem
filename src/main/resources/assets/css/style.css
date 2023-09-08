@@ -13,7 +13,7 @@
 
 .pane {
     -fx-background-radius: 20px 20px 20px 0px;
-    -fx-background-color: linear-gradient(to right top, #9559ec, #9b4de3, #a13fda, #a72ed0, #ac14c6);
+    -fx-background-color: linear-gradient(to right top, #969599, #939195, #847e87, #776b7b, #989898);
     -fx-border-color: black;
     -fx-border-radius: 20px 20px 20px 0px;
 }
