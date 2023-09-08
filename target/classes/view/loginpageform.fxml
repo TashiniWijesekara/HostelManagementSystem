@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
@@ -15,14 +15,14 @@
 
 <AnchorPane prefHeight="575.0" prefWidth="852.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.HostalMangement.controller.LoginpageformController">
    <children>
-      <Pane layoutX="436.0" layoutY="168.0" prefHeight="301.0" prefWidth="366.0" style="-fx-border-color: gray; -fx-border-radius: 15px;">
+      <Pane layoutX="434.0" layoutY="166.0" prefHeight="319.0" prefWidth="366.0" style="-fx-border-color: #F1D3B2; -fx-border-radius: 15px;">
          <children>
-            <JFXTextField fx:id="usernametxt" focusColor="#2f2e2e" layoutX="24.0" layoutY="49.0" prefHeight="45.0" prefWidth="306.0" promptText="User Name">
+            <JFXTextField fx:id="usernametxt" focusColor="#f1d3b2" layoutX="28.0" layoutY="68.0" prefHeight="45.0" prefWidth="306.0" promptText="User Name">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXTextField>
-            <Pane layoutX="14.0" layoutY="16.0" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: white;">
+            <Pane layoutX="14.0" layoutY="39.0" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: white;">
                <children>
                   <Text layoutX="17.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name ">
                      <font>
@@ -31,8 +31,7 @@
                   </Text>
                </children>
             </Pane>
-            <Line endX="265.4000244140625" layoutX="101.0" layoutY="144.0" startX="-100.0" stroke="GREY" />
-            <Pane layoutX="30.0" layoutY="132.0" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: white;">
+            <Pane layoutX="19.0" layoutY="136.0" prefHeight="26.0" prefWidth="101.0" style="-fx-background-color: white;">
                <children>
                   <Text layoutX="17.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
                      <font>
@@ -41,17 +40,17 @@
                   </Text>
                </children>
             </Pane>
-            <JFXPasswordField fx:id="passwordhidetxt" focusColor="#191a1b" layoutX="30.0" layoutY="177.0" prefHeight="45.0" prefWidth="306.0" promptText="Password">
+            <JFXPasswordField fx:id="passwordhidetxt" focusColor="#f1d3b2" layoutX="31.0" layoutY="171.0" prefHeight="45.0" prefWidth="306.0" promptText="Password">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXPasswordField>
-            <Button fx:id="passwordcofirmbtn" layoutX="132.0" layoutY="249.0" mnemonicParsing="false" onAction="#passwordconfirmbtnonAction" prefHeight="32.0" prefWidth="101.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: gray;" stylesheets="@../assets/css/style.css" text="Confirm" textFill="#0d0d0d">
+            <Button fx:id="passwordcofirmbtn" layoutX="135.0" layoutY="253.0" mnemonicParsing="false" onAction="#passwordconfirmbtnonAction" prefHeight="32.0" prefWidth="101.0" style="-fx-border-radius: 10px; -fx-background-radius: 10px; -fx-background-color: #F1D3B2;" stylesheets="@../assets/css/style.css" text="Confirm" textFill="#0d0d0d">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="passwordvisiblebtn" layoutX="304.0" layoutY="122.0" mnemonicParsing="false" onAction="#passwordvisiblebtnonAction" style="-fx-background-color: white;">
+            <Button fx:id="passwordvisiblebtn" layoutX="104.0" layoutY="126.0" mnemonicParsing="false" onAction="#passwordvisiblebtnonAction" style="-fx-background-color: white;">
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -60,7 +59,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button fx:id="passwordhidebtn" layoutX="304.0" layoutY="122.0" mnemonicParsing="false" onAction="#passwordhidebtnonAction" style="-fx-background-color: white;" visible="false">
+            <Button fx:id="passwordhidebtn" layoutX="103.0" layoutY="125.0" mnemonicParsing="false" onAction="#passwordhidebtnonAction" prefHeight="46.0" prefWidth="56.0" style="-fx-background-color: white;" visible="false">
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -76,21 +75,21 @@
             </JFXTextField>
          </children>
       </Pane>
-      <Pane layoutX="254.0" layoutY="34.0" prefHeight="55.0" prefWidth="342.0" style="-fx-border-color: black; -fx-border-radius: 20px;">
+      <Pane layoutX="254.0" layoutY="34.0" prefHeight="55.0" prefWidth="342.0" style="-fx-border-color: #F1D3B2; -fx-border-radius: 20px;">
          <children>
-            <Text layoutX="70.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel Management ">
+            <Text layoutX="70.0" layoutY="37.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Hostel Management ">
                <font>
                   <Font name="System Bold Italic" size="25.0" />
                </font>
                <fill>
-                  <RadialGradient centerX="0.5170454545454546" centerY="0.48543689320388345" radius="0.5">
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.3932038834951456" startY="0.11650485436893204">
                      <stops>
-                        <Stop color="WHITE" />
-                        <Stop color="#a8e8ff" offset="0.12318840579710146" />
-                        <Stop color="#41bafc" offset="0.7463768115942029" />
-                        <Stop color="#7ad0ff" offset="1.0" />
+                        <Stop color="#726d68" />
+                        <Stop color="#726d68" offset="0.007246376811594203" />
+                        <Stop color="#f1d3b2" offset="0.8007246376811594" />
+                        <Stop color="#f1d3b2" offset="1.0" />
                      </stops>
-                  </RadialGradient>
+                  </LinearGradient>
                </fill>
             </Text>
             <ImageView fitHeight="55.0" fitWidth="48.0" layoutX="18.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
@@ -105,6 +104,6 @@
             <Image url="@../assets/img/firstpage/hostellogin.png" />
          </image>
       </ImageView>
-      <Line endX="265.4000244140625" endY="-31.0" layoutX="126.0" layoutY="154.0" startX="265.4000244140625" startY="374.0" strokeWidth="4.0" />
+      <Line endX="265.4000244140625" endY="-31.0" layoutX="129.0" layoutY="154.0" startX="265.4000244140625" startY="374.0" />
    </children>
 </AnchorPane>

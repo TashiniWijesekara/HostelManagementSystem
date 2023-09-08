@@ -24,27 +24,27 @@
             <Pane layoutX="429.0" layoutY="427.0" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black;" />
             <Pane layoutX="299.0" layoutY="427.0" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black;" />
             <Pane layoutX="168.0" layoutY="427.0" prefHeight="43.0" prefWidth="126.0" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: black;" />
-            <JFXTextField fx:id="studentIdtxt" focusColor="#17c1ff" layoutX="29.0" layoutY="66.0" onAction="#studentidtxtonAction" prefHeight="25.0" prefWidth="287.0" promptText="Student Id">
+            <JFXTextField fx:id="studentIdtxt" focusColor="#f1d3b2" layoutX="29.0" layoutY="66.0" onAction="#studentidtxtonAction" prefHeight="25.0" prefWidth="287.0" promptText="Student Id">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="studentFirstNametxt" focusColor="#17c1ff" layoutX="395.0" layoutY="62.0" prefHeight="25.0" prefWidth="287.0" promptText="First Name">
+            <JFXTextField fx:id="studentFirstNametxt" focusColor="#f1d3b2" layoutX="395.0" layoutY="65.0" prefHeight="25.0" prefWidth="287.0" promptText="First Name">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="studentLastNametxt" focusColor="#17c1ff" layoutX="26.0" layoutY="173.0" prefHeight="25.0" prefWidth="287.0" promptText="Last Name">
+            <JFXTextField fx:id="studentLastNametxt" focusColor="#f1d3b2" layoutX="28.0" layoutY="173.0" prefHeight="25.0" prefWidth="287.0" promptText="Last Name">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXTextField fx:id="contactNumbertxt" focusColor="#17c1ff" layoutX="395.0" layoutY="171.0" prefHeight="25.0" prefWidth="287.0" promptText="Contact Number">
+            <JFXTextField fx:id="contactNumbertxt" focusColor="#f1d3b2" layoutX="395.0" layoutY="171.0" prefHeight="25.0" prefWidth="287.0" promptText="Contact Number">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
             </JFXTextField>
-            <JFXCheckBox fx:id="malecheck" checkedColor="#17c1ff" layoutX="424.0" layoutY="289.0" onAction="#malecheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Male">
+            <JFXCheckBox fx:id="malecheck" checkedColor="#f1d3b2" layoutX="424.0" layoutY="289.0" onAction="#malecheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Male">
                <font>
                   <Font size="16.0" />
                </font>
@@ -52,7 +52,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </JFXCheckBox>
-            <JFXCheckBox fx:id="femelcheck" checkedColor="#17c1ff" layoutX="425.0" layoutY="328.0" onAction="#femekcheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Female">
+            <JFXCheckBox fx:id="femelcheck" checkedColor="#f1d3b2" layoutX="425.0" layoutY="328.0" onAction="#femekcheckBoxonAction" prefHeight="18.0" prefWidth="85.0" text="Female">
                <font>
                   <Font size="16.0" />
                </font>
@@ -61,7 +61,7 @@
                </cursor>
             </JFXCheckBox>
             <DatePicker fx:id="dobtxt" layoutX="27.0" layoutY="354.0" prefHeight="25.0" prefWidth="287.0" style="-fx-focus-traversable: #17c1ff; -fx-background-color: white;" styleClass="date-picker" stylesheets="@../assets/css/style.css" />
-            <Pane layoutX="27.0" layoutY="307.0" prefHeight="12.0" prefWidth="262.0" style="-fx-background-color: white;" />
+            <Pane layoutX="26.0" layoutY="356.0" prefHeight="32.0" prefWidth="256.0" style="-fx-background-color: white;" />
             <Pane layoutX="22.0" layoutY="309.0" prefHeight="36.0" prefWidth="10.0" style="-fx-background-color: white;" />
             <Button fx:id="savebtn" layoutX="174.0" layoutY="432.0" mnemonicParsing="false" onAction="#savebtnonaction" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 10px; -fx-background-color: lightgray; -fx-border-color: black; -fx-border-radius: 10px;" text="Save">
                <font>
@@ -78,7 +78,7 @@
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <JFXTextField fx:id="adresstxt" focusColor="#17c1ff" layoutX="26.0" layoutY="261.0" prefHeight="25.0" prefWidth="287.0" promptText="Address">
+            <JFXTextField fx:id="adresstxt" focusColor="#f1d3b2" layoutX="26.0" layoutY="261.0" prefHeight="25.0" prefWidth="287.0" promptText="Address">
                <font>
                   <Font name="System Italic" size="16.0" />
                </font>
@@ -103,7 +103,7 @@
             </Text>
          </children>
       </Pane>
-      <Pane layoutX="511.0" layoutY="57.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
+      <Pane layoutX="511.0" layoutY="59.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
          <children>
             <Text layoutX="17.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
                <font>
@@ -112,7 +112,7 @@
             </Text>
          </children>
       </Pane>
-      <Pane layoutX="143.0" layoutY="171.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
+      <Pane layoutX="142.0" layoutY="171.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
          <children>
             <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
                <font>
@@ -156,7 +156,7 @@
             </ImageView>
          </graphic>
       </Button>
-      <Pane layoutX="143.0" layoutY="266.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
+      <Pane layoutX="141.0" layoutY="266.0" prefHeight="36.0" prefWidth="113.0" style="-fx-background-color: white;">
          <children>
             <Text layoutX="21.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
                <font>

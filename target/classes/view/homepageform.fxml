@@ -63,27 +63,27 @@
             </Button>
          </children>
       </Pane>
-      <Pane fx:id="studentpane" layoutX="117.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
+      <Pane fx:id="studentpane" layoutX="152.0" layoutY="49.0" prefHeight="56.0" prefWidth="147.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text layoutX="40.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student">
+            <Text layoutX="15.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textAlignment="CENTER" wrappingWidth="121.916015625">
                <font>
-                  <Font name="System Bold Italic" size="17.0" />
+                  <Font name="Calibri Bold Italic" size="17.0" />
                </font>
             </Text>
          </children></Pane>
-      <Pane fx:id="reservationpane" layoutX="494.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
+      <Pane fx:id="reservationpane" layoutX="529.0" layoutY="48.0" prefHeight="56.0" prefWidth="161.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text fill="#1b1b1b" layoutX="8.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation">
+            <Text fill="#1b1b1b" layoutX="8.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" wrappingWidth="152.99999832361937">
                <font>
-                  <Font name="System Bold Italic" size="17.0" />
+                  <Font name="Calibri Bold Italic" size="17.0" />
                </font>
             </Text>
          </children></Pane>
-      <Pane fx:id="roompane" layoutX="305.0" layoutY="50.0" prefHeight="66.0" prefWidth="182.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
+      <Pane fx:id="roompane" layoutX="340.0" layoutY="49.0" prefHeight="56.0" prefWidth="147.0" style="-fx-border-color: black;" styleClass="pane" stylesheets="@../assets/css/style.css" visible="false">
          <children>
-            <Text fill="#111111" layoutX="43.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room">
+            <Text fill="#111111" layoutX="23.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" textAlignment="CENTER" wrappingWidth="101.708984375">
                <font>
-                  <Font name="System Bold Italic" size="17.0" />
+                  <Font name="Calibri Bold Italic" size="17.0" />
                </font>
             </Text>
          </children></Pane>
@@ -96,7 +96,17 @@
             </ImageView>
          </graphic>
       </Button>
-      <Pane fx:id="optionpane" layoutX="35.0" layoutY="-31.0" opacity="0.94" prefHeight="426.0" prefWidth="215.0" style="-fx-background-color: white; -fx-background-color: gray;" visible="false">
+      <TableView layoutX="47.0" layoutY="325.0" prefHeight="216.0" prefWidth="684.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px;">
+         <columns>
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="114.39996337890625" style="-fx-background-radius: 20px; -fx-border-radius: 20px;" text="C2" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
+         </columns>
+      </TableView>
+      <Pane fx:id="optionpane" layoutX="-4.0" layoutY="-2.0" opacity="0.94" prefHeight="565.0" prefWidth="254.0" style="-fx-background-color: white; -fx-background-color: gray;" visible="false">
          <children>
             <Button fx:id="backbtn" mnemonicParsing="false" onAction="#backbtnonAction" prefHeight="46.0" prefWidth="54.0" style="-fx-background-color: gray;">
                <graphic>
@@ -145,54 +155,44 @@
             </Button>
          </children>
       </Pane>
-      <Text layoutX="312.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room" textAlignment="CENTER" wrappingWidth="151.297119140625">
+      <Text layoutX="483.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="160.99999313801527">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="BLACK" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#e1dfdf" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
       </Text>
-      <Text layoutX="515.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="128.297119140625">
+      <Text layoutX="318.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Add Room" textAlignment="CENTER" wrappingWidth="128.297119140625">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="BLACK" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#f2d1d1" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
       </Text>
-      <Text layoutX="127.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textAlignment="CENTER" wrappingWidth="151.297119140625">
+      <Text layoutX="138.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Student" textAlignment="CENTER" wrappingWidth="128.297119140625">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="Calibri" size="18.0" />
          </font>
          <fill>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
                   <Stop color="BLACK" />
-                  <Stop color="WHITE" offset="1.0" />
+                  <Stop color="#bfbbbb" offset="1.0" />
                </stops>
             </LinearGradient>
          </fill>
       </Text>
-      <TableView layoutX="47.0" layoutY="325.0" prefHeight="216.0" prefWidth="684.0" style="-fx-background-radius: 20px; -fx-border-radius: 20px;">
-         <columns>
-            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
-            <TableColumn prefWidth="114.39996337890625" style="-fx-background-radius: 20px; -fx-border-radius: 20px;" text="C2" />
-            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
-            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
-            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
-            <TableColumn prefWidth="112.80001068115234" style="-fx-borderradius: 20px; -fx-background-radius: 20px;" text="C1" />
-         </columns>
-      </TableView>
    </children>
 </AnchorPane>
